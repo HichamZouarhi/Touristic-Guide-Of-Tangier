@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="" lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Welcome to the Touristic Guide of Tangier</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+		<link rel="stylesheet" href="css/jquery-selectbox.css" />
+		<link rel="stylesheet" href="css/responsive-grid.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="stylesheet" href="css/ol.css" type="text/css">
+        <link rel="stylesheet" href="css/ol3-popup.css" type="text/css">
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/styles-ie8-and-down.css" />
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<section class="section content">
+
+			<div class="search-wrapper clearfix">
+				<div class="zone-search zone clearfix">
+
+					<div class="search-container container-24">
+
+						<div class="search block">
+							
+								<form id="default-search" class="default-search">
+								<select id="category-selector-default" name="category-default" onchange="showlayer(this);">
+									<option value="">- Category -</option>
+									<option value="bank">Bank</option>
+									<option value="restaurant">Restaurant</option>
+									<option value="shop">Shop</option>
+									<option value="hotel">Hotel</option>
+									<option value="historic-site">Historic site</option>
+									<option value="art-merchant">Art Merchant</option>
+									<option value="souk">Souk</option>
+								</select>
+                                <select id="category-selector-advanced" name="category-advanced"  onchange="showTour(this);">
+									<option value="">- Guided Tour -</option>
+									<option value="1">Tour 1</option>
+									<option value="2">Tour 2</option>
+									<option value="3">Tour 3</option>
+								</select>
+								<div class="clearfix"></div>
+							</form>
+							<form id="advanced-search" class="advanced-search search-collapsed clearfix">
+								<div class="clearfix">
+									<label>Distance:</label>
+									<div id="slider-distance" class="slider"></div>
+									<div id="distance" class="slider-value"></div>
+								</div>
+												
+								<label>Tags:</label>
+								<input type="text" id="search-what" class="text-input-black input-text" placeholder="What are you looking for?" />
+								<div class="clearfix"></div>
+								<div class="separator"></div>
+								<input type="submit" class="submit" value="search" name="submit" />
+							</form>
+							<div class="advanced-search-control">
+								<a href="#" id="advanced-search-button" class="advanced-search-button">Advanced Search</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- end of .zone-search -->
+			</div><!-- end of .search-wrapper -->
+
+			<div class="map-wrapper">
+
+				<div id="map" class="map"></div>
+
+            </div><!-- end of .map-wrapper -->
+
+
+		
+		<script src="scripts/ol.js"></script>
+        <script src="scripts/ol3-popup.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.colorbox-min.js"></script>
+        <script type="text/javascript" src="scripts/graph.js"></script>
+		<script type="text/javascript" src="scripts/map.js"></script>
+		<script type="text/javascript" src="scripts/jquery.selectbox-0.6.1.js"></script>
+		<script type="text/javascript" src="scripts/superfish.js"></script>
+		<script type="text/javascript" src="scripts/jquery.mobilemenu.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="scripts/scripts.js"></script>
+
+	</body>
+
+</html>
